@@ -1,0 +1,186 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #496D99;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #F1C40F;
+}
+
+h1 img {
+    margin-right: 10px;
+    width: 100px;  /* Adjusted size */
+    height: 100px; /* Adjusted size */
+    max-width: 100%;
+    object-fit: contain;
+    transition: width 0.3s ease;
+}
+
+h1 img:hover {
+    transform: scale(1.1);
+}
+
+p,
+h2,
+.about-us-content p,
+h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+.logo-container img {
+    width: 100px;  /* Adjusted size */
+    height: 100px; /* Adjusted size */
+    margin: 0 10px;
+    background: transparent;
+    border: 3px solid #ffffff;  /* Adjusted border */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;  /* Center-align logos */
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    background-color: #1D4F76;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+h2:hover,
+h3:hover {
+    background-color: #F1C40F;
+}
+
+.product-container img:hover {
+    transform: scale(1.1);
+}
+
+.product-container img {
+    width: 150px;  /* Adjusted size */
+    height: 150px; /* Adjusted size */
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;  /* Changed to horizontal layout */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-text {
+    margin-top: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+h2.price-heading {
+    background-color: #1D4F76;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.price-range {
+    padding: 10px;
+    background-color: #0E3D59;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.price-range div:nth-child(odd) {
+    background-color: #1D4F76;
+}
+
+.enlarged-logo {
+    width: 200px;  /* Adjusted size */
+    height: 200px; /* Adjusted size */
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.enlarged {
+    transform: scale(1.2);
+}
+
+.management-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.management-team div {
+    flex: 0 0 250px;  /* Adjusted width */
+    margin: 10px;
+    text-align: center;
+}
+
+.management-team img {
+    width: 100%;  /* Set to full width */
+    max-width: 250px;  /* Maximum width */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.management-team p {
+    margin-bottom: 0;
+}
+
+.about-us-heading:hover {
+    background-color: #F1C40F;
+}
+
+.about-us-content {
+    text-align: center;  /* Center-align text */
+}
+
+.about-us-content p:last-child {
+    margin-bottom: 0;
+}
+
+.about-us-content img {
+    width: 100%;  /* Set to full width */
+    max-width: 500px;  /* Maximum width */
+    height: auto;
+    margin: 20px auto;  /* Center-align the image */
+    border-radius: 10px;
+    display: block;
+}
