@@ -1,0 +1,51 @@
+
+footer {
+    margin-top: 100px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 50px 20%;
+    color: #ffffff;
+  }
+  
+  .social-icons a i {
+    color: #ffffff;
+    font-size: 22px;
+    margin-right: 18px;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons a i:hover {
+    font-size: 22px;
+    color: #ffffff;
+    transform: scale(1.04);
+  }
+  
+  footer .logo {
+    text-align: center; 
+  }
+
+  footer .logo img{
+    margin: 0;
+    width: 200px;
+  }
+  
+
+  @media only screen and (max-width : 746px) {
+    footer {
+       display: flex;
+       flex-direction: column;
+      }
+
+      .social-icons{
+        text-align: center;
+      }
+
+      footer .logo img{
+        width: 80%;
+      }
+      
+
+  }
+      
