@@ -5,137 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
     <title>LuxLife</title>
     <style>
         /** utility classes**/
-        @font-face {
-            font-family: Brandon-bold;
-            src: url(fonts/Brandon.Grotesque.Condensed/BrandonGrotesqueCond-Bold.ttf);
-        }
-
-        @font-face {
-            font-family: Brandon-light;
-            src: url(fonts/Brandon.Grotesque.Condensed/BrandonGrotesqueCond-Light.ttf);
-        }
-
-
-        @font-face {
-            font-family: Brandon-thin;
-            src: url(fonts/Brandon.Grotesque.Condensed/BrandonGrotesqueCond-Thin.ttf);
-        }
-
-        @font-face {
-            font-family: Brandon-regular;
-            src: url(fonts/Brandon.Grotesque.Condensed/BrandonGrotesqueCond-Regular.ttf);
-        }
-
-
-        @font-face {
-            font-family: Brandon-medium;
-            src: url(fonts/Brandon.Grotesque.Condensed/BrandonGrotesqueCond-Medium.ttf);
-        }
-
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .tlh-10 {
-            line-height: 200%;
-        }
-
-
-        .text-header {
-            font-family: sans-serif;
-            font-size: 28px;
-        }
-
-        .text-body {
-            font-size: 22px;
-            font-family: 'Brandon-regular'
-        }
-
-        .color-1 {
-            color: #675d23
-        }
-
-        .color-2 {
-            color: #000000;
-        }
-
-        /*****/
-        body,
-        html {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font-family: 'Brandon-regular';
-            overflow-y: hidden;
-        }
-
-        * {
-
-            letter-spacing: 1.02px;
-        }
-
-        header {
-            color: #ffffff;
-            background-color: #ffffff;
-            box-shadow: 0px 0px 3px 3px #959595;
-            height: 10vh;
-            width: 100vw;
-            overflow-y: hidden;
-            display: flex;
-            align-items: center;
-
-        }
-
-        header .logo {
-            width: 30vw;
-        }
-
-        header .logo img {
-            margin-left: 30px;
-            width: relative;
-            height: 10vh;
-        }
-
-        .navbar {
-            padding: 0px 20px;
-            display: flex;
-            justify-content: space-between;
-            width: 60vw;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #757575;
-            font-family: 'Brandon-medium';
-            font-size: 1.30em;
-            transition: all 0.3s;
-            padding: 5vh;
-        }
-
-        .navbar a:hover {
-            transform: scale(1.02);
-            background-color: #999999;
-            color: #ffffff;
-
-
-        }
-
-        main {
-            height: 90vh;
-            width: 100vw;
-            overflow-y: scroll;
-        }
-
+     
+        
 
         .opener-image {
             background-image: url(assets/bg-1.jpg);
@@ -279,30 +154,12 @@
             }
 
             .opener-caption {
-                width: 90%;
+                width: 90%; 
                 font-size: 25px;
             }
 
             .card img {
                 width: 150px;
-            }
-
-            header .logo img {
-                margin: 0px;
-                width: 20vw;
-                height: auto;
-            }
-
-
-            .navbar{
-                width: 80vw;
-                padding: 2px;
-            }
-
-            .navbar a {
-                padding: 5vw 4px;
-                vertical-align: middle;
-                font-size: 18px;
             }
 
             .center-caption-container {
@@ -330,9 +187,9 @@
             <img src="assets/logo-main.png">
         </div>
         <div class="navbar" style="display: flex; justify-content: space-between;">
-            <a href="#">Home</a>
-            <a href="#">Brands</a>
-            <a href="#">Products</a>
+            <a href="home.html">Home</a>
+            <a href="products.html">Brands</a>
+            <a href="products.html">Products</a>
             <a href="#">About Us</a>
 
         </div>
