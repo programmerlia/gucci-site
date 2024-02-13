@@ -4,145 +4,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gussie Luxury Brands</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cormorant+Garamond:400,700|Pacifico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style> 
- 
+    <title>LuxLife</title>
+    <style>
+        /** utility classes**/
+     
+        
+
+        .opener-image {
+            background-image: url(assets/bg-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            width: 100%;
+            height: 90vh;
+            background-position: middle left;
+            display: flex;
+            align-items: end;
+        }
+
+        .opener-container {
+            height: 90vh;
+        }
+
+
+        .opener-caption {
+            margin-left: 25px;
+            margin-bottom: 50px;
+            width: 60%;
+            font: normal 50px 'Brandon-bold';
+            font-weight: 800;
+            color: rgb(106, 84, 15);
+            text-shadow: 4px 2px 10px rgba(255, 255, 255, 0.792);
+        }
+
+        /**texts in the middle*/
+        .center-caption-container {
+            display: flex;
+            flex-direction: column;
+            padding: 10vh 10vw;
+        }
+
+        /** CARD*/
+        .card-container {
+            padding: 3VH 0px;
+            display: flex;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card {
+            padding: 10px 20px;
+            margin: 20px;
+            text-align: center;
+            transition: all 0.5s;
+            width: 25%;
+            background-size: 100% 200%;
+            box-shadow: 0px 0px 10px 5px #6d6d6d4d;
+
+            transition-timing-function: ease;
+        }
+
+        .card:hover {
+            background-position: top;
+        }
+
+        .card:hover button {
+            transform: scale(1);
+
+        }
+
+        .card img {
+            width: 250px;
+        }
+
+        .card p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .card h2 {
+            color: #675d23;
+            margin: 5px 0px;
+            font-weight: 100;
+            ;
+            font-family: sans-serif;
+        }
+
+        .card button {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            background-color: rgb(101, 78, 24);
+            border: none;
+            padding: 5px 15px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            transform: scale(0);
+            transform-origin: top center;
+            transition: all 0.5s;
+        }
+
+        .card button:hover {
+            background-color: #3c3615;
+        }
+
+
+
+        /*VIDEO CONTAINERS*/
+
+
+        .video-container {
+            display: grid;
+            height: 70vh;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+        .video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: sepia(1.70) saturate(0.70);
+        }
+
+        .video {
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+
+
+
+        @media only screen and (max-width : 746px) {
+
+            /* styles for mobile devices */
+            .opener-image {
+                height: 60vh;
+            }
+
+            .opener-container {
+                height: 60vh;
+            }
+
+            .opener-caption {
+                width: 90%; 
+                font-size: 25px;
+            }
+
+            .card img {
+                width: 150px;
+            }
+
+            .center-caption-container {
+                padding: 3vh 10vw;
+            }
+
+            .card-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                height: auto;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
     </style>
-
-    <script>
-        function toggleManagementTeam() {
-            var managementTeam = document.querySelector('.management-team');
-            managementTeam.classList.toggle('hidden');
-        }
-
-        function enlargeLogo() {
-            var logo = document.querySelector('.enlarged-logo');
-            logo.classList.toggle('enlarged');
-        }
-
-        function toggleAboutUs() {
-            var aboutUsContent = document.querySelector('.about-us-content');
-            aboutUsContent.classList.toggle('hidden');
-        }
-    </script>
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo-main.png">
+        </div>
+        <div class="navbar" style="display: flex; justify-content: space-between;">
+            <a href="home.html">Home</a>
+            <a href="products.html">Brands</a>
+            <a href="products.html">Products</a>
+            <a href="#">About Us</a>
 
-    <h1 onclick="enlargeLogo()">
-        <img src="Gussie_Luxury_Brands_Logo.png" alt="Gussie Logo">
-        Gussie Luxury Brands
-    </h1>
-    <p>Experience Elegance, Embrace Exclusivity – Gussie, Where Luxury Lives.</p>
+        </div>
+    </header>
+    <main>
+        <section class="opener-container center">
+            <div class="opener-image">
+                <div class="opener-caption">Experience Elegance, Embrace Exclusivity – Gussie, Where Luxury Lives.
+                </div>
+            </div>
 
-    <h2 onclick="toggleManagementTeam()">Brands</h2>
+        </section>
 
-    <div class="logo-container">
-        <img src="LW Logo.jpeg" alt="Louis Vuitton">
-        <img src="DIOR Logo.jpeg" alt="Dior">
-        <img src="Polo Ralph Lauren.jpeg" alt="Ralph Lauren">
-    </div>
+        <section class="center-caption-container center">
+            <p class="text-header text-center color-1">
+                LUXLIFE FASHION STORE
+            </p>
+            <p class="text-body text-center color-2 tlh-10 fb-1">
+                We believe that fashion is more than just clothes. It's a way of life, a statement of your personality,
+                and a reflection of your values. That's why we create fashion that inspires, empowers, and celebrates
+                you.
+                Our fashion brand is not just about trends, it's about timeless elegance. We craft quality pieces that
+                flatter your figure, enhance your beauty, and suit your lifestyle.
+                You deserve to look and feel your best every day. That's why we design fashion that fits your needs,
+                your mood, and your budget. Whether you're looking for casual, formal, or anything in between, we have
+                something for you.
+                Fashion is not a one-size-fits-all affair. It's a personal choice, a creative expression, and a form of
+                art. That's why we offer a wide range of styles, colors, and sizes to suit your preferences. Find your
+                fashion with us.</p>
+        </section>
 
-    <h2 onclick="toggleManagementTeam()">Products</h2>
-    <div class="product-container">
-        <img src="Dior_Bag.png" alt="Dior Bag">
-        <p class="product-text">Bags</p>
-        <h2 class="price-heading">Price Range</h2>
-        <div class="price-range">
-            <div>₱5,000 - ₱8,000</div>
-        </div>
-    </div>
+        <section class="card-container">
+            <div class="card">
+                <img src="assets/logo-d.jpeg">
+                <h2> Dior </h2>
+                <p>Christian Dior started the brand in Paris at 30 Avenue Montaigne. It took less than three months from
+                    the brand's creation to show its first collection on Feb. 12, 1947.</p>
+                <button class="bttn-order"> See More </button>
+            </div>
+            <div class="card">
+                <img src="assets/logo-g.png">
+                <h2> Gucci </h2>
+                <p>Since its founding in 1921, Gucci has transformed from a single shop opened on a side street in
+                    Florence to its position today as a symbol of Italian craft and innovative design.</p>
+                <button class="bttn-order"> See More </button>
+            </div>
+            <div class="card">
+                <img src="assets/logo-l.jpeg">
+                <h2> Louie Vuitton </h2>
+                <p>Louis Vuitton Malletier, commonly known as Louis Vuitton , is a French luxury fashion house ranging
+                    from luxury bags and leather, and company founded in 1854 by Louis Vuitton. </p>
+                <button class="bttn-order"> See More </button>
+            </div>
 
-    <div class="product-container">
-        <img src="LV_Shoes.png" alt="LV Shoes">
-        <p class="product-text">Shoes</p>
-        <h2 class="price-heading">Price Range</h2>
-        <div class="price-range">
-            <div>₱6,000 - ₱10,000</div>
-        </div>
-    </div>
 
-    <div class="product-container">
-        <img src="RL_Polo_Shirt.png" alt="RL Polo Shirt">
-        <p class="product-text">Polo Shirt</p>
-        <h2 class="price-heading">Price Range</h2>
-        <div class="price-range">
-            <div>₱3,000 - ₱5,000</div>
-        </div>
-    </div>
+        </section>
 
-    <div class="product-container">
-        <img src="Dior_Perfume.png" alt="Dior Perfume">
-        <p class="product-text">Perfume</p>
-        <h2 class="price-heading">Price Range</h2>
-        <div class="price-range">
-            <div>₱4,000 - ₱7,000</div>
-        </div>
-    </div>
+        <section class="center-caption-container center">
+            <p class="text-header text-center color-1">
+                STYLE WITH LUXLIFE FASHION
+            </p>
+        </section>
 
-    <div class="product-container">
-        <img src="LV_Sandals.png" alt="LV Sandals">
-        <p class="product-text">Sandals</p>
-        <h2 class="price-heading">Price Range</h2>
-        <div class="price-range">
-            <div>₱7,000 - ₱12,000</div>
-        </div>
-    </div>
+        <section class="video-container">
+            <div class="video">
+                <video no-controls loop muted autoplay>
+                    <source src="assets/Balmain Fall Winter 2023 Fashion Show (Teaser).mp4">
+                </video>
+            </div>
+            <div class="video">
+                <video no-controls muted autoplay>
+                    <source src="assets/MANGO Committed _ Making FASHION more SUSTAINABLE.mp4">
+                </video>
+            </div>
 
-    <h2 onclick="toggleManagementTeam()" class="management-heading">Management Team</h2>
-    <div class="management-team hidden">
-        <div>
-            <img src="lm.jpg" alt="Business Owner">
-            <strong>Business Owner:</strong> Lance Mathew Ocampo
-            <p class="management-description">Lance is the visionary leader behind Gussie Luxury Brands, guiding the brand to new heights of success and luxury.</p>
-        </div>
-        <div>
-            <img src="nat.jpg" alt="Manager">
-            <strong>Manager:</strong> Nathaniel Caliboso
-            <p class="management-description">Nathaniel oversees the day-to-day operations, ensuring smooth coordination between different departments. With her leadership, Gussie Luxury Brands continues to set industry standards in luxury and exclusivity.</p>
-        </div>
-        <div>
-            <img src="tey.jpg" alt="Supervisor">
-            <strong>Supervisor:</strong> Teyshaun Frencillo
-            <p class="management-description">Teyshaun's keen eye for detail ensures that each product meets the highest standards of quality. His dedication to excellence and commitment to perfection are evident in every aspect of Gussie's product line.</p>
-        </div>
-        <div>
-            <img src="dia.jpg" alt="Secretary">
-            <strong>Secretary:</strong> Diana Jane Sescon
-            <p class="management-description">Diana is the backbone of Gussie Luxury Brands, managing communications and maintaining an organized workflow. Her efficiency and professionalism contribute to the seamless functioning of the entire team.</p>
-        </div>
-        <div>
-            <img src="tin.jpg" alt="Marketing">
-            <strong>Marketing:</strong> Justin Atienza
-            <p class="management-description">Justin brings creativity and strategic thinking to Gussie's marketing endeavors. Her innovative campaigns and deep understanding of the luxury market have played a pivotal role in expanding the brand's reach and influence.</p>
-        </div>
-        <div>
-            <img src="me.jpg" alt="Programmer">
-            <strong>Programmer:</strong> Tristan Ralph Reyes
-            <p class="management-description">Tristan is the tech genius behind Gussie Luxury Brands' online presence. He ensures a seamless and secure online shopping experience, contributing to the brand's success in the digital landscape.</p>
-        </div>
-    </div>
+        </section>
+        <!-- code footerher -->
+        <footer>
+            <div class="logo">
+                <img src="assets/logo-main.png">
+                <p><b>
+                        Fashion Collections</b>
+                </p>
+            </div>
+            <div>
 
-    <h2 onclick="toggleAboutUs()" class="about-us-heading">About Us</h2>
-    <div class="about-us-content hidden">
-        <p>Greetings, Sir or Ma'am, and welcome to Gussie Luxury Brands. At our company, we offer a variety of exquisite products, including purses, sandals, perfume, and more. Every item in our shop is carefully curated to ensure it meets the highest standards of luxury. Our friendly staff is dedicated to helping you choose the perfect product, and we also offer discounts on various items. There is no place like Gussie Luxury Brands, where elegance and longevity meet.</p>
-        <div class="logo-container">
-            <img src="Gussie_Luxury_Brands_Logo.png" alt="Gussie Logo" class="enlarged-logo">
-        </div>
-        <p>We can say that our products are beautiful and durable because of our employees who love what they do. You will never regret the quality and durability of our products because there is nothing like it in our logo, which is unique and the beauty is really guaranteed, especially here in the logo, how it was created and if it was strengthened and grown a lot. Here at our shop, we only have quality, and everyone here works hard for their family.</p>
-    </div>
+                <p> &copy; 2024 LuxLife Fashion Collections | All rights reserved</p>
+                <p> Created by Hannali Olayvar</p>
 
-    <h3 class="credits-heading">Credits</h3>
-    <div class="credits-content">
-        <p>Website designed and developed by Group 1.</p>
-    </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <hr>
+            </div>
+        </footer>
+        <!-- end of footer-->
+
+    </main>
+
 
 </body>
 
 </html>
-
-You’re welcome
-Come again sometimes
