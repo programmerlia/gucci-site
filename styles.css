@@ -165,7 +165,12 @@ footer {
     margin: 0;
     width: 200px;
   }
-  
+  .center-caption-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw;
+}
+
 
   @media only screen and (max-width : 746px) {
     footer {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,88 @@
     <link rel="stylesheet" href="styles.css">
     <title>Products</title>
     <style>
-        .opener-video video{
+        .opener-video video {
             width: 100vw;
         }
 
-        .opener-video{
+        .opener-video {
+            height: 50vh;
+            
+                overflow: hidden;1
+            
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 15px;
+            row-gap: 25px;
+        }
+
+        .product-item {
+
+            flex-basis: calc(25% - 20px);
             overflow: hidden;
-            height: 60vh;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            transform: scale(1.02);
+            filter: brightness(0.90);
+
+        }
+
+
+        .product-info {
+            padding: 10px 0px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+
+        .product-name {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .product-item {
+                flex-basis: calc(50% - 20px);
+            }
+
+            .opener-video video {
+                width: auto;
+            }
+
+            .opener-video {
+                overflow: hidden;
+                height: 50vh;
+            }
+
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img src="assets/logo-main.png">
         </div>
         <div class="navbar" style="display: flex; justify-content: space-between;">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="products.html">Brands</a>
             <a href="products.html">Products</a>
             <a href="#">About Us</a>
@@ -32,10 +98,101 @@
     </header>
     <main>
         <div class="opener-video">
-            <video no-controls loop muted autoplay>
+            <video no-controls loop muted autoplay >
                 <source src="assets/desktop2_2.mp4">
             </video>
+        </div>
+
+        <div class="center-caption-container center">
+            <p class="text-header text-center color-1">
+                LUXLIFE PRODUCTS
+            </p>
+            <p class="text-body text-center color-2 tlh-10 fb-1">
+                Here are the Products from Luxury Brands. May it be Bags, Clothes, Shoes, Jewelry.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/18/65/76/75/18657675_51914472_480.jpg"
+                    alt="Product 1">
+                <div class="product-info">
+                    <div class="product-name">Saint Laurent Bag</div>
+                    <div class="product-price">$199.99</div>
+                </div>
             </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/20/82/13/63/20821363_50785090_480.jpg"
+                    alt="Product 2">
+                <div class="product-info">
+                    <div class="product-name"> Valentino Garavani</div>
+                    <div class="product-price">$299.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/17/41/63/34/17416334_36334476_480.jpg"
+                    alt="Product 3">
+                <div class="product-info">
+                    <div class="product-name">Gold Summit Bag</div>
+                    <div class="product-price">$399.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/20/86/99/27/20869927_51082246_480.jpg"
+                    alt="Product 4">
+                <div class="product-info">
+                    <div class="product-name">Ciabanni Valentin</div>
+                    <div class="product-price">$499.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/18/03/39/21/18033921_40322258_480.jpg"
+                    alt="Product 5">
+                <div class="product-info">
+                    <div class="product-name">Tom Browne</div>
+                    <div class="product-price">$599.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/22/46/87/64/22468764_52416326_480.jpg"
+                    alt="Product 6">
+                <div class="product-info">
+                    <div class="product-name">Burberry</div>
+                    <div class="product-price">$699.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/20/30/28/48/20302848_50353563_480.jpg"
+                    alt="Product 7">
+                <div class="product-info">
+                    <div class="product-name">>Loui Vuitton</div>
+                    <div class="product-price">$799.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/20/08/29/59/20082959_50643181_480.jpg"
+                    alt="Product 8">
+                <div class="product-info">
+                    <div class="product-name">LEMAIRE</div>
+                    <div class="product-price">$899.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/20/31/35/91/20313591_50417463_480.jpg"
+                    alt="Product 9">
+                <div class="product-info">
+                    <div class="product-name">Prada</div>
+                    <div class="product-price">$999.99</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://cdn-images.farfetch-contents.com/22/28/43/92/22284392_52528497_480.jpg"
+                    alt="Product 10">
+                <div class="product-info">
+                    <div class="product-name">Gucci</div>
+                    <div class="product-price">$1099.99</div>
+                </div>
+            </div>
+        </div>
         <!-- code footerher -->
         <footer>
             <div class="logo">
@@ -62,4 +219,5 @@
 
     </main>
 </body>
+
 </html>
